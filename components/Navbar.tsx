@@ -4,9 +4,8 @@ import Link from 'next/link';
 import React from 'react'
 import Logout from '@/components/Logout';
 
-type Props = {}
 
-const Navbar = async (props: Props) => {
+const Navbar = async () => {
     const session = await auth();
   return (
     <nav className='border-b border-gray-300 bg-background w-full flex items-center'>
