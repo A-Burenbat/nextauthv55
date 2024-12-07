@@ -3,9 +3,9 @@ import Link from 'next/link'
 import { redirect } from 'next/navigation';
 import React from 'react'
 
-type Props = {}
 
-const Page = async (props: Props) => {
+
+const Page = async () => {
   const session = await auth();
   
   if( !session?.user ){
